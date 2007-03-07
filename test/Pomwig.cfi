@@ -1,0 +1,99 @@
+# Pomwig DataCard 
+
+source = PomwigSource 
+{ 
+    untracked int32 maxEvents = 10
+    untracked int32 herwigVerbosity = 1
+    untracked bool herwigHepMCVerbosity = false	
+    untracked int32 herwigLhapdfVerbosity = 0	
+    untracked int32 maxEventsToPrint = 0
+    untracked int32 diffTopology = 0
+    untracked string lhapdfSetPath = "/afs/cern.ch/sw/lcg/external/MCGenerators/lhapdf/5.2.3/share/PDFsets"
+	
+    PSet HerwigParameters = {
+	vstring parameterSets = {
+  		"DPEInclusiveWlep"
+  	}
+
+	vstring DPEInclusiveWlep = {
+		'NSTRU      = 9          ! Pomeron Structure Function',
+		'Q2WWMN     = 1E-6       ! Minimum |t|',
+		'Q2WWMX     = 4d0        ! Maximum |t|',
+		'YWWMIN     = 1E-6       ! Minimum xi',
+		'YWWMAX     = 0.1d0      ! Maximum xi',
+                'IPROC      = 11450      ! Process PomPom -> W -> leptons',
+		'MODPDF(1)  = -1         ! Set MODPDF',
+		'MODPDF(2)  = -1         ! Set MODPDF'
+	}
+	vstring SD1InclusiveWlep = {
+                'NSTRU      = 9          ! Pomeron Structure Function',
+                'Q2WWMN     = 1E-6       ! Minimum |t|',
+                'Q2WWMX     = 4d0        ! Maximum |t|',
+                'YWWMIN     = 1E-6       ! Minimum xi',
+                'YWWMAX     = 0.1d0      ! Maximum xi',
+                'IPROC      = 11450      ! Process PomP -> W -> leptons',
+		'MODPDF(1)  = -1         ! Set MODPDF',
+                'MODPDF(2)  = 20060      ! Set MODPDF'
+        }
+	vstring SD2InclusiveWlep = {
+                'NSTRU      = 9          ! Pomeron Structure Function',
+                'Q2WWMN     = 1E-6       ! Minimum |t|',
+                'Q2WWMX     = 4d0        ! Maximum |t|',
+                'YWWMIN     = 1E-6       ! Minimum xi',
+                'YWWMAX     = 0.1d0      ! Maximum xi',
+                'IPROC      = 11450      ! Process PPom -> W -> leptons',
+                'MODPDF(1)  = 20060      ! Set MODPDF',
+                'MODPDF(2)  = -1         ! Set MODPDF'
+        }
+	vstring DPEInclusiveZ2mu = {
+                'NSTRU      = 9          ! Pomeron Structure Function',
+                'Q2WWMN     = 1E-6       ! Minimum |t|',
+                'Q2WWMX     = 4d0        ! Maximum |t|',
+                'YWWMIN     = 1E-6       ! Minimum xi',
+                'YWWMAX     = 0.1d0      ! Maximum xi',
+                'IPROC      = 11353      ! Process PomPom -> Z/gamma* -> muons',
+                'MODPDF(1)  = -1         ! Set MODPDF',
+                'MODPDF(2)  = -1         ! Set MODPDF'
+        }
+        vstring SD1InclusiveZ2mu = {
+                'NSTRU      = 9          ! Pomeron Structure Function',
+                'Q2WWMN     = 1E-6       ! Minimum |t|',
+                'Q2WWMX     = 4d0        ! Maximum |t|',
+                'YWWMIN     = 1E-6       ! Minimum xi',
+                'YWWMAX     = 0.1d0      ! Maximum xi',
+                'IPROC      = 11353      ! Process PomP -> Z/gamma* -> muons',
+                'MODPDF(1)  = -1         ! Set MODPDF',
+                'MODPDF(2)  = 20060      ! Set MODPDF'
+        }
+        vstring SD2InclusiveZ2mu = {
+                'NSTRU      = 9          ! Pomeron Structure Function',
+                'Q2WWMN     = 1E-6       ! Minimum |t|',
+                'Q2WWMX     = 4d0        ! Maximum |t|',
+                'YWWMIN     = 1E-6       ! Minimum xi',
+                'YWWMAX     = 0.1d0      ! Maximum xi',
+                'IPROC      = 11353      ! Process PPom -> Z/gamma* -> muons',
+                'MODPDF(1)  = 20060      ! Set MODPDF',
+                'MODPDF(2)  = -1         ! Set MODPDF'
+        }
+	vstring DPEInclusiveJets = {
+                'NSTRU      = 9          ! Pomeron Structure Function',
+                'Q2WWMN     = 1E-6       ! Minimum |t|',
+                'Q2WWMX     = 4d0        ! Maximum |t|',
+                'YWWMIN     = 1E-6       ! Minimum xi',
+                'YWWMAX     = 0.1d0      ! Maximum xi',
+                'PTMIN      = 25d0       ! Minimum parton PT',
+                'IPROC      = 11500      ! Process PomPom -> jets',
+		'MODPDF(1)  = -1         ! Set MODPDF',
+                'MODPDF(2)  = -1         ! Set MODPDF'
+        }
+	vstring PomwigNonDiff = {
+		'RMASS(201) = 190        ! Massof the Higgs boson',
+                'IPROC      = 1611       ! Process gg -> H -> ZZ',
+                'MODBOS(1)  = 3          ! enforde first Z -> mumu',
+                'MODBOS(2)  = 3          ! enforce second Z -> mumu',
+		'MODPDF(1)  = 20060      ! Set MODPDF',
+                'MODPDF(2)  = 20060      ! Set MODPDF'
+        }
+	
+    }		
+}  
