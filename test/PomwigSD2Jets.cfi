@@ -13,16 +13,17 @@ source = PomwigSource
 	
     PSet HerwigParameters = {
 	vstring parameterSets = {
-  		"SD2InclusiveWlep"
+  		"SD1InclusiveJets"
   	}
 
-	vstring SD2InclusiveWlep = {
+	vstring SD1InclusiveJets = {
                 'NSTRU      = 9          ! Pomeron Structure Function',
                 'Q2WWMN     = 1E-6       ! Minimum |t|',
                 'Q2WWMX     = 4d0        ! Maximum |t|',
                 'YWWMIN     = 1E-6       ! Minimum xi',
                 'YWWMAX     = 0.1d0      ! Maximum xi',
-                'IPROC      = 11450      ! Process PPom -> W -> leptons',
+                'PTMIN      = 20d0       ! Minimum parton PT',
+                'IPROC      = 11500      ! Process PomP -> jets',
 		'MODPDF(1)  = 20060      ! Set MODPDF',
                 'MODPDF(2)  = -1         ! Set MODPDF'
         }

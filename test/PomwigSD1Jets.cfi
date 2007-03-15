@@ -8,23 +8,24 @@ source = PomwigSource
     untracked int32 herwigLhapdfVerbosity = 0	
     untracked int32 maxEventsToPrint = 0
     untracked bool printCards = false
-    untracked int32 diffTopology = 2
+    untracked int32 diffTopology = 1
     untracked string lhapdfSetPath = "/afs/cern.ch/sw/lcg/external/MCGenerators/lhapdf/5.2.3/share/PDFsets"
 	
     PSet HerwigParameters = {
 	vstring parameterSets = {
-  		"SD2InclusiveWlep"
+  		"SD1InclusiveJets"
   	}
 
-	vstring SD2InclusiveWlep = {
+	vstring SD1InclusiveJets = {
                 'NSTRU      = 9          ! Pomeron Structure Function',
                 'Q2WWMN     = 1E-6       ! Minimum |t|',
                 'Q2WWMX     = 4d0        ! Maximum |t|',
                 'YWWMIN     = 1E-6       ! Minimum xi',
                 'YWWMAX     = 0.1d0      ! Maximum xi',
-                'IPROC      = 11450      ! Process PPom -> W -> leptons',
-		'MODPDF(1)  = 20060      ! Set MODPDF',
-                'MODPDF(2)  = -1         ! Set MODPDF'
+                'PTMIN      = 20d0       ! Minimum parton PT',
+                'IPROC      = 11500      ! Process PomP -> jets',
+		'MODPDF(1)  = -1         ! Set MODPDF',
+                'MODPDF(2)  = 20060      ! Set MODPDF'
         }
 	
     }		
