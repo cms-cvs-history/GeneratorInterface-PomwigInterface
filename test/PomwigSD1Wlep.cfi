@@ -2,14 +2,17 @@
 
 source = PomwigSource 
 { 
-    untracked int32 maxEvents = 10
+    untracked int32 maxEvents = 100
+    untracked int32 maxErrors = 10
     untracked int32 herwigVerbosity = 0
     untracked bool herwigHepMCVerbosity = false	
     untracked int32 herwigLhapdfVerbosity = 0	
     untracked int32 maxEventsToPrint = 0
     untracked bool printCards = false
-    untracked int32 diffTopology = 1
     untracked string lhapdfSetPath = "/afs/cern.ch/sw/lcg/external/MCGenerators/lhapdf/5.2.3/share/PDFsets"
+
+    int32 diffTopology = 1
+    int32 h1fit = 5	
 	
     PSet HerwigParameters = {
 	vstring parameterSets = {
