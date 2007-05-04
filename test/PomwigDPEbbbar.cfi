@@ -2,7 +2,6 @@
 
 source = PomwigSource 
 { 
-    untracked int32 maxEvents = 100
     untracked int32 maxErrors = 10	
     untracked int32 herwigVerbosity = 0
     untracked bool herwigHepMCVerbosity = false	

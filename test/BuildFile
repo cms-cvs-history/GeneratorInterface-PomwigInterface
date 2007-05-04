@@ -1,6 +1,5 @@
 <use name=boost>
 <use name=root>
-<use name=GeneratorInterface/PomwigInterface>
 <use name=FWCore/Framework>
 <use name=Foundation/PluginManager>
 <use name=FWCore/ParameterSet>
@@ -8,9 +7,8 @@
 <use name=hepmc>
 <use name=root>
 <use name=SimDataFormats/HepMCProduct>
+<flags EDM_PLUGIN=1>
 <library file=Z2muAnalyzer.cc name=Z2muAnalyzer>
-<flags SEAL_PLUGIN_NAME="Z2muAnalyzer">
 </library>
 <library file=PomwigAnalyzer.cc name=PomwigAnalyzer>
-<flags SEAL_PLUGIN_NAME="PomwigAnalyzer">
 </library>
