@@ -7,9 +7,11 @@
 <use name=hepmc>
 <use name=root>
 <use name=SimDataFormats/HepMCProduct>
+<use name=DataFormats/Common>
 <use name=DataFormats/HepMCCandidate>
 <use name=DataFormats/JetReco>
 <use name=PhysicsTools/UtilAlgos>
+<use name=PhysicsTools/CandUtils>
 <flags EDM_PLUGIN=1>
 <library name=GeneratorInterfacePomwigInterface_test file=*.cc>
 </library>
