@@ -5,8 +5,7 @@
 <use name=FWCore/ParameterSet>
 <use name=CLHEP>
 <use name=hepmc>
-<use name=root>
-<use name=SimDataFormats/HepMCProduct>
+<use name=SimDataFormats/GeneratorProducts>
 <flags EDM_PLUGIN=1>
 <library file=Z2muAnalyzer.cc name=Z2muAnalyzer>
 </library>
