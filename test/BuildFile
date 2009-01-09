@@ -5,14 +5,10 @@
 <use name=FWCore/ParameterSet>
 <use name=CLHEP>
 <use name=hepmc>
-<use name=root>
-<use name=SimDataFormats/HepMCProduct>
-<use name=DataFormats/Common>
-<use name=DataFormats/HepMCCandidate>
-<use name=DataFormats/JetReco>
-<use name=PhysicsTools/UtilAlgos>
-<use name=PhysicsTools/CandUtils>
+<use name=SimDataFormats/GeneratorProducts>
 <flags EDM_PLUGIN=1>
-<library name=GeneratorInterfacePomwigInterface_test file=*.cc>
+<library file=Z2muAnalyzer.cc name=Z2muAnalyzer>
+</library>
+<library file=PomwigAnalyzer.cc name=PomwigAnalyzer>
 </library>
 
